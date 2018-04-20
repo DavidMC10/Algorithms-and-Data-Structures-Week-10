@@ -148,7 +148,7 @@ void HashTable<T>::print(std::ostream & out) const {
 
 	// implement this function
 
-	for (int i = 0; i < currentsize; i++) {
+	for (int i = 0; i < table.length(); i++) {
 		out << "[" << i << "] -> ";
 		for (int j = 0; j < table[i].size(); j++) {
 			out << "(" << table[i].get(j).key << ", " << table[i].get(j).element << ") ";
